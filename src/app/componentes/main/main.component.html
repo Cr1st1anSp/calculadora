@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+
+<body>
+    <div class="contenedor">
+        <div class="display">
+            <input type="text" [(ngModel)]="valor" readonly>
+        </div>
+
+        <div class="botones">
+            <div class="operadores">
+                <button class="btn" (click)="addOperador('+')">+</button>
+                <button class="btn" (click)="addOperador('-')">-</button>
+                <button class="btn" (click)="addOperador('*')">*</button>
+                <button class="btn" (click)="addOperador('/')">/</button>
+            </div>
+            <div class="digitos">
+                <button class="btn" (click)="addDigito(7)">7</button>
+                <button class="btn" (click)="addDigito(8)">8</button>
+                <button class="btn" (click)="addDigito(9)">9</button>
+            </div>
+            <div class="digitos">
+                <button class="btn" (click)="addDigito(4)">4</button>
+                <button class="btn" (click)="addDigito(5)">5</button>
+                <button class="btn" (click)="addDigito(6)">6</button>
+            </div>
+            <div class="digitos">
+                <button class="btn" (click)="addDigito(1)">1</button>
+                <button class="btn" (click)="addDigito(2)">2</button>
+                <button class="btn" (click)="addDigito(3)">3</button>
+            </div>
+            <div class="operadores">
+                <button class="btn" (click)="borrar()">C</button>
+                <button class="btn" (click)="addDigito(0)">0</button>
+                <button class="btn" (click)="addDecimal()">.</button>
+                <button class="btn" (click)="calcular()">=</button>
+            </div>
+        </div>
+    </div>
+
+    <h1>Jorge Christian Serrano Puertos</h1>
+</body>
+
+</html>
